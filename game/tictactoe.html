@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tictactoe.css">
+    <title>TIC TAC TOE</title>
+</head>
+
+<body>
+<div class="select">
+    <div class="p">
+        <p>please select your turn</p>
+    </div>
+    <div class="gh">
+    <button class="but" onclick="
+    chance='player1'
+    "><img src="x.png" alt="" width="30px" style="display: flex; justify-content: center ; align-items: center;"></button>
+    <button class="but" onclick="
+    chance='player2'
+    "><img src="0.png" alt="" width="30px" style="display: flex; justify-content: center ; align-items: center;"></button>
+</div>
+
+</div>
+    <!-- <p id="turn"></p> -->
+    <div class="tic">
+        <div class="section-1 margin">
+            <p id="p1"  onclick="start('p1')"></p>
+            <p id="p2" onclick="start('p2')"></p>
+            <p id="p3" onclick="start('p3')"></p>
+        </div>
+        <div class="section-2 margin">
+            <p id="p4" onclick="start('p4')"></p>     
+            <p id="p5" onclick="start('p5')"></p>     
+            <p id="p6" onclick="start('p6')"></p>     
+
+        </div>
+        <div class="section-3 margin">
+            <p id="p7" onclick="start('p7')"></p>     
+            <p id="p8" onclick="start('p8')"></p>     
+            <p id="p9" onclick="start('p9')"></p>     
+
+        </div>
+<p id="result" class="but2"></p>
+
+
+<button class="but3" onclick="
+p1.innerHTML = '';
+    p2.innerHTML = '';
+    p3.innerHTML = '';
+    p4.innerHTML = '';
+    p5.innerHTML = '';
+    p6.innerHTML = '';
+    p7.innerHTML = '';
+    p8.innerHTML = '';
+    p9.innerHTML = '';
+
+    p1.disabled = false;
+    p2.disabled = false;
+    p3.disabled = false;
+    p4.disabled = false;
+    p5.disabled = false;
+    p6.disabled = false;
+    p7.disabled = false;
+    p8.disabled = false;
+    p9.disabled = false;
+
+    
+    result.innerHTML = '';
+    // chance = 'player1';
+    // turn.innerHTML = Player +'1s turn';
+    stopp = false;
+">play Again</button>
+    </div>
+
+    
+    <script src="tictac.js">
+
+
+    </script>
+</body>
+</html>
